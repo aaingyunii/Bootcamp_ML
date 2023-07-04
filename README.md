@@ -25,10 +25,7 @@ jupyter notebook
 
 
 ## Jupyter notebook 폰트 변경 방법
-
 1. 로컬 C 드라이브 내 `.jupyter` 폴더를 찾는다.<br><br>
-![image](https://github.com/aaingyunii/230629_ML_01/assets/31847834/d1f2de98-5c92-4e74-97bd-20289a65c1bd)
-<br>
 2. 해당 경로에 custom 폴더 생성 후 안에 원하는 폰트 설정의 css 파일을 생성한다.<br><br>
 3. jupyter notebook 실행 or 새로고침 하여 폰트 변경 적용 확인
 <br><br>
