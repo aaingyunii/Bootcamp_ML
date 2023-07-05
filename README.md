@@ -47,3 +47,27 @@ Ex) 파이썬 버전이 서로 다른 프로젝트를 진행할 때 분리해서
 <br>
 
 ### ✅ 아나콘다 가상 환경을 만드는 것은 프로젝트 관리, 의존성 관리, 시스템 호환성, 격리와 안정성, 그리고 재현성 을 위해 중요한 도구입니다.
+<br><br>
+
+
+## 아나콘다 가상환경 : matplot 그림 한글 폰트 적용
+
+### 이동 :
+`C:\Users\{사용자명}\anaconda3\envs\{가상환경_이름}\Lib\site-packages\matplotlib\mpl-data\`
+
+### 편집
+**`matplotlibrc` file** (메모장으로 열람) 
+- **`font.family:  malgun gothic`** 으로 변경 or 다른 폰트로도 변경
+    - +) font.family 앞 '#' 삭제!
+<br>
+
+**그러나,** 이렇게만 하면 '-'(마이너스)가 깨지기 떄문에
+
+<br>
+
+- **`axes.unicode_minus: False`** 로 변경!<br>
+    - +) axes.unicode_minus 앞 '#' 삭제<br>
+      
+### 이것은 각 가상환경의 설정을 건든 것이고, anaconda 의 base를 변경하지 않았다.<br> 따라서 위 설정은 `가상환경 마다 matplotlib` 를 쓴다면 그때마다 설정하면 된다.
+
+<br><br>
