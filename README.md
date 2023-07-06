@@ -71,3 +71,20 @@ Ex) 파이썬 버전이 서로 다른 프로젝트를 진행할 때 분리해서
 ### 이것은 각 가상환경의 설정을 건든 것이고, anaconda 의 base를 변경하지 않았다.<br> 따라서 위 설정은 `가상환경 마다 matplotlib` 를 쓴다면 그때마다 설정하면 된다.
 
 <br><br>
+
+## Graphviz 설치 및 가상환경 설정
+- 시각화 프로그램, `Diagram` 을 그리는데 사용.
+- ex) DecisionTree가 진행되는 과정을 그릴 수 있다.
+
+### Graphviz 사이트 접속 :
+`graphviz-8.0.5 (64-bit) EXE installer` 다운로드
+
+설치 완료 후
+### cmd 관리자 권한으로 실행 : 
+`dot -c` 실행
+
+
+### 아나콘다 명령창에서 가상환경 접속 후 
+`pip install graphviz`<br>
+그 다음 `Jupyter notebook` 실행
+
