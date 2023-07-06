@@ -76,7 +76,7 @@ Ex) 파이썬 버전이 서로 다른 프로젝트를 진행할 때 분리해서
 - 시각화 프로그램, `Diagram` 을 그리는데 사용.
 - ex) DecisionTree가 진행되는 과정을 그릴 수 있다.
 
-### Graphviz 사이트 접속 :
+### [Graphviz](https://graphviz.org/download/) 사이트 접속 :
 `graphviz-8.0.5 (64-bit) EXE installer` 다운로드
 
 설치 완료 후
