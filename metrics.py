@@ -1,4 +1,3 @@
-# 해당 셀의 내용을 .py 파일로 저장
 
 
 import matplotlib.pyplot as plt
