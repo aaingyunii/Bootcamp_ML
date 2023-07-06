@@ -9,4 +9,5 @@
 #### ➕ `Graphviz` 설치 및 설정 후 `DecisionTreeClassifier` 모델을 통해 시각화 확인
 
 
+### 🔗[TIL](https://github.com/aaingyunii/Bootcamp_TIL/issues/21)
 ### 🔗[TIL](https://github.com/aaingyunii/Bootcamp_TIL/issues/22)
