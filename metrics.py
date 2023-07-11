@@ -12,6 +12,9 @@ from sklearn.metrics import (confusion_matrix,
                              roc_auc_score,
                              RocCurveDisplay,
                              roc_curve,
+                             mean_squared_error,
+                             mean_absolute_error,
+                             r2_score,
 )
 
 
@@ -85,11 +88,27 @@ def print_metrics_classification(y, pred, pos_proba=None, title = None):
     """
     if title:
         print(f"================={title}=================")
-    print("정확도 Accuracy : ", accuracy_score(y, pred))
-    print("재현율 Recall : ", recall_score(y, pred))
-    print("정밀도 Precision : ", precision_score(y, pred))
-    print("F-1 Score : ", f1_score(y, pred))
+    print("정확도 : ", accuracy_score(y, pred))
+    print("재현율 : ", recall_score(y, pred))
+    print("정밀도 : ", precision_score(y, pred))
+    print("F-1점수: ", f1_score(y, pred))
     
     if pos_proba is not None:
         print("Average Precision : ", average_precision_score(y,pos_proba))
         print("ROC-AUC : ", roc_auc_score(y,pos_proba))
+
+        
+def print_metrics_regression(y, pred, title=None):
+    """
+    회귀 평가지표를 출력하는 함수
+    출력 내용 : mse, rmse, mae, r2
+    [parameter]
+    y: ndarray - 정답
+    pred: ndarray - 모델 추정한 label
+    """
+    if title:
+        print(f"================={title}=================")
+    print("MSE  : ", mean_squared_error(y,pred))
+    print("RMSE : ", mean_squared_error(y,pred,squared=False))
+    print("MAE  : ", mean_absolute_error(y,pred))
+    print("R2   : ",r2_score(y,pred))
