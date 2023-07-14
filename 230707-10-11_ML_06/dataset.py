@@ -26,7 +26,7 @@ def get_breast_cancer_dataset(test_size=0.25, scaling=False):
     return [(X_train, X_test, y_train, y_test), data['feature_names']]
 
 
-def get_wine_dataset(path='data/wine.csv', test_size=0.25):
+def get_wine_dataset(path='../data/wine.csv', test_size=0.25):
     df = pd.read_csv(path)
     X = df.drop(columns='color')
     y = df['color']
@@ -36,7 +36,7 @@ def get_wine_dataset(path='data/wine.csv', test_size=0.25):
     
     return train_test_split(X, y, test_size=test_size, stratify=y, random_state=0)
     
-def get_boston_dataset(path="data/boston_hosing.csv", test_size=0.25):
+def get_boston_dataset(path="../data/boston_hosing.csv", test_size=0.25):
     df = pd.read_csv(path)
     X = df.drop(columns='MEDV')
     y = df['MEDV']
